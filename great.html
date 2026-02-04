@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Daily Tasks | Picsly Live</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #050112; color: white; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .progress-container { background: rgba(255, 255, 255, 0.1); border-radius: 20px; height: 10px; overflow: hidden; position: relative; }
+        .progress-bar { height: 100%; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .diamond-glow { text-shadow: 0 0 10px rgba(59, 130, 246, 0.8); }
+        .gold-glow { text-shadow: 0 0 10px rgba(255, 215, 0, 0.6); }
+    </style>
+</head>
+<body class="pb-32">
+
+    <div class="relative w-full py-12 flex flex-col items-center justify-center text-center">
+        <div class="absolute top-0 w-full h-full bg-gradient-to-b from-yellow-500/10 to-transparent -z-10"></div>
+        <h1 class="text-4xl font-black italic tracking-tighter uppercase mb-1">Streamer <span class="text-yellow-500 gold-glow">Daily Tasks</span></h1>
+        <p class="text-[10px] font-bold text-gray-400 tracking-[0.3em] uppercase">Complete tasks to earn big</p>
+    </div>
+
+    <div class="px-6 space-y-5">
+        
+        <div class="glass-card p-5 relative overflow-hidden border-l-4 border-blue-500">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h4 class="font-bold text-sm">Revenue Milestone</h4>
+                    <p class="text-[10px] text-gray-400">Earn 100,000 Diamonds from fans</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-[10px] font-bold text-blue-400 uppercase">Reward</p>
+                    <p class="text-sm font-black diamond-glow">+20,000 💎</p>
+                </div>
+            </div>
+            <div class="progress-container mb-2">
+                <div class="progress-bar bg-blue-500" style="width: 0%;"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-bold">
+                <span class="text-gray-500">Progress: 0</span>
+                <span class="text-white">Goal: 100,000</span>
+            </div>
+        </div>
+
+        <div class="glass-card p-5 border-l-4 border-pink-500">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h4 class="font-bold text-sm">Today's Live Duration</h4>
+                    <p class="text-[10px] text-gray-400">Maintain an active stream</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-[10px] font-bold text-pink-400 uppercase">Reward</p>
+                    <p class="text-sm font-black">+100 💎</p>
+                </div>
+            </div>
+            <div class="progress-container mb-2">
+                <div class="progress-bar bg-pink-500" style="width: 1%;"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-bold">
+                <span class="text-pink-400">Progress: 20s</span>
+                <span class="text-white">Goal: 2 Hours</span>
+            </div>
+        </div>
+
+        <div class="glass-card p-5 border-l-4 border-purple-500">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h4 class="font-bold text-sm">PK Victory Field</h4>
+                    <p class="text-[10px] text-gray-400">Win competitive PK battles</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-[10px] font-bold text-purple-400 uppercase">Reward</p>
+                    <p class="text-sm font-black">+400 💎</p>
+                </div>
+            </div>
+            <div class="progress-container mb-2">
+                <div class="progress-bar bg-purple-500" style="width: 0%;"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-bold">
+                <span class="text-gray-500">Progress: 0</span>
+                <span class="text-white">Goal: 2 Wins</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+            <div class="glass-card p-4">
+                <p class="text-[10px] font-bold text-gray-400 uppercase mb-2">Stream Likes</p>
+                <p class="text-xs font-bold mb-3">Goal: 600 Times</p>
+                <p class="text-sm font-black text-red-500 mb-1">+100 💎</p>
+                <div class="progress-container h-1">
+                    <div class="progress-bar bg-red-500" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="glass-card p-4">
+                <p class="text-[10px] font-bold text-gray-400 uppercase mb-2">New Followers</p>
+                <p class="text-xs font-bold mb-3">Goal: 3 People</p>
+                <p class="text-sm font-black text-green-500 mb-1">+100 💎</p>
+                <div class="progress-container h-1">
+                    <div class="progress-bar bg-green-500" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10 text-center opacity-30">
+            <p class="text-[10px] font-black tracking-[0.4em] italic uppercase">More Tasks Coming Soon</p>
+        </div>
+
+    </div>
+
+    <div class="fixed bottom-0 left-0 w-full p-5 bg-black/90 backdrop-blur-2xl border-t border-white/10 z-50">
+        <div class="flex items-center gap-4 mb-4">
+            <div class="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center border border-blue-500/40">
+                <i class="fas fa-info text-blue-400 text-xs"></i>
+            </div>
+            <p class="text-[10px] text-gray-300 leading-tight">
+                Track your real-time progress in the <span class="text-white font-bold italic">Bottom Right Corner</span> of your live stream room. Diamonds are credited <span class="text-green-400 font-bold">instantly</span> upon task completion!
+            </p>
+        </div>
+        <button onclick="window.location.href='picsly://go_live'" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 py-3 rounded-xl font-black text-xs uppercase tracking-widest shadow-lg active:scale-95 transition-all">
+            Start Stream Now
+        </button>
+    </div>
+
+</body>
+</html>
